@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Bookmark landing page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <a href="#" aria-label="home">
+          <img src="images/logo-bookmark.svg" alt="" />
+        </a>
+
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <button class="btn-login">LOGIN</button>
+        </ul>
+
+        <button class="btn-hamburger" data-btn-hamburger>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" data-mobile-menu>
+      <div>
+        <div class="mobile-nav-header">
+          <a href="#" aria-label="home">
+            <img src="images/logo-bookmark-white.svg" alt="" />
+          </a>
+          <button disabled="disabled"></button>
+        </div>
+        <div class="links">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+          <button>LOGIN</button>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div>
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="btn-header">
+            <button class="btn-blue">Get it on Chrome</button>
+            <button class="btn-white">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="header-parent-img"></div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Features Section -->
+        <section>
+          <h2 class="text-center">Features</h2>
+          <p class="text-center p-description">
+            Our aim is to make it quick and easy for you to access your favorite
+            websites. Your bookmarks sync between your devices so you can access
+            them on the go.
+          </p>
+          <div class="tab-container">
+            <button class="tab-active" data-btn-feature="1">Simple Bookmarking</button>
+            <button data-btn-feature="2">Speedy Searching</button>
+            <button data-btn-feature="3">Easy Sharing</button>
+          </div>
+          <div class="tab">
+            <img data-feature-image src="images/illustration-features-tab-1.svg" alt="" />
+            <div>
+              <h2 data-feature-heading>Bookmark in one click</h2>
+              <p data-feature-paragraph>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favorite sites.
+              </p>
+              <button class="btn-blue">More Info</button>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section">
+          <h2 class="text-center">Download the extension</h2>
+          <p class="p-description text-center">
+            We’ve got more browsers in the pipeline. Please do let us know if you’v got a favorite you’d like us to prioritize.
+          </p>
+          <div class="download-container">
+            <div class="download-card">
+              <img src="images/logo-chrome.svg" alt="">
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+              <img src="images/bg-dots.svg" alt="">
+              <button class="btn-blue">Add & Install Extension</button>
+            </div>
+            <div class="download-card">
+              <img src="images/logo-firefox.svg" alt="">
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 55</p>
+              <img src="images/bg-dots.svg" alt="">
+              <button class="btn-blue">Add & Install Extension</button>
+            </div>
+            <div class="download-card">
+              <img src="images/logo-opera.svg" alt="">
+              <h3>Add to Opera</h3>
+              <p>Minimum version 46</p>
+              <img src="images/bg-dots.svg" alt="">
+              <button class="btn-blue">Add & Install Extension</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+          <h2 class="text-center">Frequently Asked Questions</h2>
+          <p class="text-center p-description">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+          <div class="question-container">
+            <div class="question-card" data-question-card>
+              <div class="question-btn">
+                <span>What is Bookmark?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>  
+            <div class="question-card" data-question-card>
+              <div class="question-btn">
+                <span>How can I request a new browser?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+            <div class="question-card" data-question-card>
+              <div class="question-btn">
+                <span>Is there a mobile app?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                sollicitudin ex et ultricies bibendum.</p>
+            </div>
+            <div class="question-card" data-question-card>
+              <div class="question-btn">
+                <span>What about other Chromium browsers?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            </div>
+          </div>
+          <button class="btn-blue">More Info</button>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="email-section">
+        <div class="email-info">
+          <span>35,000+ already joined</span>
+          <h2>Stay up-to-date with what we’re doing</h2>
+          <div class="email-form">
+            <input type="text" placeholder="Enter your email address" data-email-input>
+            <small class="hidden" data-error-text>Whoops, make sure it's an email</small>
+            <i data-error-icon class="fa-sharp fa-solid fa-circle-exclamation hidden"></i>
+            <input type="submit" value="Contact Us" class="btn-login" data-btn-submit>
+          </div>
+        </div>  
+      </section>
+
+      <section class="footer-section">
+        <div class="container">
+          <div class="footer-nav">
+            <a href="#" aria-label="home">
+              <img src="images/logo-bookmark-white.svg" alt="" />
+            </a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+          </div>
+          <div>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
